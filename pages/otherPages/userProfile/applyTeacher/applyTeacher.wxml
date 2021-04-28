@@ -1,0 +1,22 @@
+<!--pages/otherPages/userProfile/appleTeacher/appleTeacher.wxml-->
+<view class="apply_wrap">
+    <view class="title">Profile</view>
+    <view class="applyer">
+        <view  class="applyer_name">Name</view>
+        <input type="text" name="" placeholder="Fill in your name!" id="" />
+    </view>
+    <view class="apply_picture">
+        <view class="picture_title">
+            <view class="head">Head Portrait</view>
+            <view class="head_tip">Please upload a clear and true picture of your face.</view>
+        </view>
+        <image class="picture" src="/iamges/upload.png"></image>
+    </view>
+    <view class="introduction">
+        <view class="introducte_title">Introduction</view>
+        <textarea name="introduction" id="introduction" placeholder="Fill in your resume..."></textarea>
+    </view>
+</view>
+<view class="next_btn_wrap">
+    <view class="next_btn">Next</view>
+</view>

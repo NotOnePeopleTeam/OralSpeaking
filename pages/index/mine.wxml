@@ -1,0 +1,75 @@
+<!--pages/mine/mine.wxml-->
+<view class="container app">
+    <view class="user_bg">
+        <image class="user_bg_icon" mode="bottom" src="/iamges/user_bg_icon.png"></image>
+        <view class="user_proflie_wrap">
+            <view class="user_proflie">
+                <view class="avatar">
+                    <image mode="aspectFit" src="{{avatarUrl}}"></image>
+                </view>
+            <view class="usernick">
+                <view class="blod">{{nickName}}</view>
+                <view class="small">Common user</view>
+            </view>
+            <view class="certification">
+                <view class="apply" data-url="/pages/otherPages/userProfile/applyTeacher/applyTeacher" bindtap="userClickRoute">申请老师认证</view>
+            </view>
+            </view>
+            <view class="attend_class">
+                <view class="number_class">
+                    <view class="line">1次</view>
+                    <view class="line">上课次数</view>
+                </view>
+                <view class="remaining_class">
+                    <view class="remaining line">0h</view>
+                    <view class="line">剩余课时</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="user_others">
+        <view class="classin_account lesson" data-url="/pages/otherPages/userProfile/classin/classin" bindtap="userClickRoute">
+            <view class="icon">
+                <image mode="aspectFit" src="/iamges/users.png"></image> 绑定Classin账号
+            </view>
+            <view class="arrow">
+                <view class="bind_classin">未绑定</view><image src="/iamges/arrow-right.png"></image>
+            </view>
+        </view>
+        <view  class="lesson_edit lesson" data-url="/pages/otherPages/userProfile/record/record" bindtap="userClickRoute">
+            <view class="icon">
+                <image mode="aspectFit" src="/iamges/record.png"></image> 上课记录
+            </view>
+            <view class="arrow">
+                <image mode="aspectFit" src="/iamges/arrow-right.png"></image>
+            </view>
+        </view>
+        <view  class="lesson_service lesson" data-url="/pages/otherPages/userProfile/service/service" bindtap="serviceBtn">
+            <view class="icon">
+                <image mode="aspectFit" src="/iamges/service.png"></image>联系客服
+            </view>
+            <view class="arrow">
+                <image mode="aspectFit" src="/iamges/arrow-right.png"></image>
+            </view>
+        </view>
+        <view  class="lesson_language lesson" data-url="/pages/otherPages/userProfile/language/language" bindtap="userClickRoute">
+            <view class="icon">
+                <image mode="aspectFit" src="/iamges/Translate.png"></image>切换语言
+            </view>
+            <view class="arrow">
+                中文
+                <image mode="aspectFit" src="/iamges/arrow-right.png"></image>
+            </view>
+        </view>
+        <view  class="lesson_question lesson" data-url="/pages/otherPages/userProfile/question/question" bindtap="userClickRoute">
+            <view class="icon">
+                <image mode="aspectFit" src="/iamges/question-mark.png"></image> 常见问题
+            </view>
+            <view class="arrow">
+                <image mode="aspectFit" src="/iamges/arrow-right.png"></image>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- service 弹框组件 -->
+<serviceCom wx:if="{{booleanMask}}" service="{{service}}" bind:booleanService="serviceClick"></serviceCom>

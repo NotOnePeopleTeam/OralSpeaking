@@ -1,0 +1,70 @@
+/* pages/otherPages/userProfile/classinAccount/classin.wxss */
+.classin_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.flex_con{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 85rpx;
+    width: 689rpx;
+    border-bottom: 2rpx solid #e2e2e2;
+    align-items: center;
+}
+.arrow_icon{
+    width: 50rpx;
+    height: 50rpx;
+}
+.Verification{
+    width: 151rpx;
+    height: 52rpx;
+    border: 2px solid #B5B5B5;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 52rpx;
+    font-size: 26rpx;
+}
+.icon_right{
+    margin-right: 36rpx;
+}
+.classin_tip{
+    width: 619rpx;
+    height: 67rpx;
+    font-size: 26rpx;
+    color: #666666;
+    line-height: 67rpx
+}
+.classin_download{
+    width: 308rpx;
+    height: 78rpx;
+    border: 2rpx solid #333333;
+    border-radius: 39rpx;
+    text-align: center;
+    line-height: 78rpx;
+    margin: 56rpx 0;
+}
+.loading_type,.classin_title{
+    font-weight: bold;
+    color: #333333;
+    line-height: 40rpx;
+    font-size: 32rpx;
+}
+.loading_http{
+    font-size: 28rpx;
+    color: #666666;
+    font-family: initial;
+    margin: 23rpx auto 60rpx;
+}
+.qrcode{
+    width: 235rpx;
+    height: 235rpx;
+    margin: 17rpx auto;
+}
+.classin_about,.classin_qrcode{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}

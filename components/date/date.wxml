@@ -1,0 +1,12 @@
+<!-- the date of components -->
+<view class="date_wrap">
+    <view class="date_item {{item.d == today ? 'now' : ''}}" bind:tap="fetchDate" data-index="{{index}}" data-currentDate="{{item.d}}" wx:for="{{week}}" wx:key="index" wx:if="{{item.i != 6 && item.i != 0}}">
+        <view class="week">
+            <view class="item">{{item.w}}</view>
+        </view>
+        <view class="day">
+            <view class="item">{{item.d}}</view>
+        </view>
+    </view>
+</view>
+<slot></slot>

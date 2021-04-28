@@ -1,0 +1,74 @@
+/* pages/otherPages/userProfile/appleTeacher/appleTeacher.wxss */
+.apply_wrap{
+    padding-bottom: 133rpx;
+}
+.title{
+    font-size: 32rpx;
+    font-weight: bold;
+    text-align: center;
+    line-height: 75rpx;
+    width: 100%;
+    margin: 0 auto;
+}
+.applyer,.apply_picture{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 2rpx #e6e6e6;
+    background-color: white;
+    padding: 24rpx 30rpx;
+}
+.applyer{
+    height: 75rpx;
+}
+.picture_title .head{
+    font-size: 30rpx;
+}
+.picture_title .head_tip{
+    font-size: 28rpx;
+    color: #999999;
+    letter-spacing: 2rpx;
+}
+.introduction{
+    font-size: 30rpx;
+    line-height: 80rpx;
+    background-color: white;
+    padding: 24rpx 30rpx;
+}
+.introduction textarea{
+    height: 300rpx;
+    width: 660rpx;
+    margin: 0 auto;
+}
+.picture{
+    width: 128rpx;
+    height: 128rpx;
+}
+.picture_title {
+    width: 400rpx;
+}
+.introducte_title{
+    font-size: 30rpx;
+    line-height: 70rpx;
+}
+.next_btn_wrap{
+    width: 750rpx;
+    height: 133rpx;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.next_btn{
+    width: 605rpx;
+    height: 88rpx;
+    background: #F44C70;
+    border-radius: 44rpx;
+    font-size: 32rpx;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 88rpx;
+    margin: 0 auto;
+}

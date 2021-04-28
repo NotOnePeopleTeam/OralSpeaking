@@ -1,0 +1,20 @@
+<!--components/appointment/appointment.wxml-->
+<view class="wrap" catchtap="clickMask">
+    <view class="content_back">
+        <image class="img_mask" src="/iamges/icon_cancel.png"></image>
+        <image class="close_icon" catchtap="cancel" src="/iamges/close_icon.png"></image>
+        <view class="content_select">
+            <view class="title_icon">
+                <image mode="aspectFit" src="/iamges/appointment_icon.png"></image>
+            </view>
+            <view class="textTip">取消后退款将在24h内原路返回至您的账户</view>
+            <view class="line_mask"></view>
+            <view class="confirm_only" catchtap="confirm">确认</view>
+            <view class="select" wx:if="{{false}}">
+                <view class="select_appointment" catchtap="confirm">约课</view>
+                <view class="cancel_select" catchtap="cancel">取消</view>
+            </view>
+        </view>
+    </view>
+</view>
+<slot></slot>

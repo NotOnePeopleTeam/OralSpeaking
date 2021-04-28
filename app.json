@@ -1,0 +1,67 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/index/timetable",
+        "pages/index/mine",
+        "components/date/date",
+        "components/language/language",
+        "components/appointment/appointment",
+        "components/serviceCom/serviceCom",
+        "pages/details/details",
+        "custom-tab-bar/index"
+    ],
+    "subPackages": [
+        {
+            "root": "pages/otherPages/userProfile",
+            "name": "personalProfile",
+            "pages": [
+                "applyTeacher/applyTeacher",
+                "classin/classin",
+                "record/record",
+                "service/service",
+                "language/language",
+                "question/question",
+                "record/refund/refund"
+            ]
+        }
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#F45F7F",
+        "navigationBarTitleText": "口语说",
+        "navigationBarTextStyle": "white"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "tabBar": {
+        "custom": true,
+        "color": "gray",
+        "selectedColor": "#F45F7F",
+        "borderStyle": "white",
+        "backgroundColor": "white",
+        "list": [
+            {
+                "index": 0,
+                "iconPath": "iamges/clock.png",
+                "selectedIconPath": "iamges/clock-icon.png",
+                "text": "首页",
+                "pagePath": "pages/index/index"
+            },
+            {
+                "index": 1,
+                "iconPath": "iamges/date-fill.png",
+                "selectedIconPath": "iamges/date-fill-icon.png",
+                "text": "课表",
+                "pagePath": "pages/index/timetable"
+            },
+            {
+                "index": 2,
+                "iconPath": "iamges/user.png",
+                "selectedIconPath": "iamges/user_icon.png",
+                "text": "我的",
+                "pagePath": "pages/index/mine"
+            }
+        ]
+    }
+}

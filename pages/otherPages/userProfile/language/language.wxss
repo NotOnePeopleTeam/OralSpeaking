@@ -1,0 +1,22 @@
+/* pages/otherPages/userProfile/language/language.wxss */
+.check{
+    width: 50rpx;
+    height: 45rpx;
+}
+.language_list>view{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 48rpx;
+    line-height: 88rpx;
+    height: 88rpx;
+    border-bottom: 1px solid #E6E6E6;
+}
+.lang{
+    font-weight: bold;
+    font-size: 32rpx;
+    color: #333333;
+}
+.now{
+    color: #F44C70;
+}

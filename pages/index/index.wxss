@@ -1,0 +1,61 @@
+/**index.wxss**/
+.course,.language{
+  align-items: left;
+}
+.lesson_list{
+  margin: 0 20rpx;
+  background-color: white;
+  overflow: hidden;
+  height: 200rpx;
+}
+.lesson{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15rpx;
+  margin-bottom: 5px;
+  border: 1rpx solid transparent;
+  border-radius: 10px;
+}
+.avatar{
+  width: 170rpx;
+  height: 170rpx;
+  border: 1px solid gray;
+  border-radius: 10rpx;
+  overflow: hidden;
+  margin-right: 20rpx;
+}
+.content{
+  width: 50%;
+  text-align: left;
+  margin-right: 10rpx;
+}
+.lesson_profile{
+  text-align: center;
+}
+.name,.title{
+  line-height: 48rpx;
+  font-size: 32rpx;
+  padding-bottom: 40rpx;
+}
+.name{
+  font-weight: bold;
+}
+.on{
+  background-color: #f888a4;
+  color: #ff1f57;
+  border-color: hotpink;
+}
+.teacher_profile{
+  overflow: hidden;
+  display: -webkit-box;
+  font-size: 24rpx;
+  font-family: initial;
+  -webkit-box-orient: vertical;
+  white-space: wrap;
+  line-height: 30rpx;
+  word-break: break-all;
+  -webkit-line-clamp:  2;
+  height: 60rpx;
+  text-overflow: ellipsis;
+}

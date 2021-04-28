@@ -1,0 +1,7 @@
+<!--pages/otherPages/userProfile/language/language.wxml-->
+<view class="language_list">
+    <view class="chiness" catchtap="translate_language" wx:for="{{language}}" wx:key="index" data-id="{{item.id}}">
+        <text class="lang {{selected_id == item.id ? 'now' : ''}}">{{item.language_ch}}</text>
+        <image class="check" wx:if="{{selected_id == item.id}}" src="/iamges/check.png" mode="aspectFill"></image>
+    </view>
+</view>

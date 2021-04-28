@@ -1,0 +1,83 @@
+/* pages/timetable.wxss */
+.title{
+    font-weight: bold;
+    background-color: white;
+    padding-top: 52rpx;
+    padding-left: 45rpx;
+    font-size: 32rpx;
+}
+.lesson_list{
+    margin: 20rpx 0 0;
+    background-color: white;
+    padding-bottom: 20rpx;
+}
+.lesson_item{
+    padding-bottom: 10rpx;
+    padding-top: 10rpx;
+    border-bottom: 1px solid #e0e0e0;
+    margin: 0 30rpx 10rpx;
+
+}
+.item_flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.lesson_time{
+    overflow: hidden;
+}
+.lesson_content{
+    text-align: right;
+}
+.down{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.topic{
+    width: 334rpx;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+    font-size: 24rpx;
+}
+.down_wrap{
+    width: 54%;
+    overflow: hidden;
+}
+.down{
+    font-size: small;
+    color: #666666;
+    padding-bottom: 20rpx;
+}
+.up{
+    align-items: center;
+    color: #212121;
+    font-size: 32rpx;
+}
+.cancel{
+    padding: 10rpx 6rpx;
+    border: 1rpx solid #b5b5b5;
+    border-radius: 30px;
+    background-color: #E9E9E9;
+    font-size: 26rpx;
+    height: 52rpx;
+    padding: 14rpx 16rpx;
+}
+text.selected{
+    color: white;
+    background-color: #F44C70;
+    border: 1rpx solid #F44C70;
+}
+.student{
+    display: inline-block;
+    width: 40rpx;
+    height: 40rpx;
+    margin: auto 10rpx -10rpx;
+
+}
+.up text{
+    line-height: 80rpx;
+}

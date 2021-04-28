@@ -1,0 +1,30 @@
+<!--pages/otherPages/userProfile/classinAccount/classin.wxml-->
+<view class="classin_container">
+    <view class="classin_adress flex_con">
+        <view class="adress">国家/地区</view>
+        <input type="text" placeholder="中国" />
+        <image class="arrow_icon" src="/iamges/arrow-right.png"></image>
+    </view>
+    <view class="classin_phone flex_con">
+        <view class="phone_code">+86</view>
+        <input type="text" placeholder="请填写手机号码" />
+        <view class="Verification ">获取验证码</view>
+    </view>
+    <view class="classin_verify flex_con">
+        <view class="verify">验证码</view>
+        <input type="text" placeholder="请填写验证码" />
+        <image class="arrow_icon icon_right" src="/iamges/arrow_right.png"></image>
+    </view>
+    <view class="classin_tip">*如果您未注册Classin账号，我们将帮您自动完成注册</view>
+    <view class="classin_about">
+        <view class="classin_download">Classin下载</view>
+        <view class="loading_type">Windows / MacOS</view>
+        <view class="loading_http">https://www.eeo.cn</view>
+        <view class="classin_qrcode">
+            <view class="classin_title">Android / IOS</view>
+            <view class="qrcode">
+                <image mode="aspectFill" src="/iamges/classin.png"></image>
+            </view>
+        </view>
+    </view>
+</view>

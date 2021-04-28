@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "component_date": "../../components/date/date",
+    "component_appointment": "../../components/appointment/appointment"
+  }
+}

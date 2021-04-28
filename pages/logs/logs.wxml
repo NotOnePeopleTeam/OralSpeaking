@@ -1,0 +1,14 @@
+<view class="wrap" catchtap="clickMask">
+    <view class="content_back">
+        <image class="img_mask" src="/iamges/icon_cancel.png"></image>
+        <image class="close_icon" catchtap="cancel" src="/iamges/close_icon.png"></image>
+        <view class="content_select">
+            <view class="textTip">享受更好的服务,需要您的授权</view>
+            <view class="line_mask"></view>
+            <view class="select">
+                <button class="select_appointment" bindtap="getUserInfo">点击授权</button>
+                <view class="cancel_select" catchtap="cancel">取消授权</view>
+            </view>
+        </view>
+    </view>
+</view>

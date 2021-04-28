@@ -1,0 +1,64 @@
+/* pages/otherPages/userProfile/record/record.wxss */
+.star{
+    width: 52rpx;
+    height: 52rpx;
+}
+.container_record{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333333;
+}
+.record_evaluate{
+    margin: 32rpx 20rpx 10rpx;
+    background-color: white;
+    padding: 0 32rpx;
+    border-radius: 14rpx;
+}
+.lesson_date,.lesson_language{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 33rpx ;
+}
+.leave_message,.submit{
+    display: flex;
+    flex-direction: column;
+}
+.lesson_evaluate{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 600rpx;
+    margin: 0 auto;
+}
+.lesson_language{
+    padding-bottom: 32rpx;
+    border-bottom: 2rpx solid #e6e6e6;
+    margin-bottom: 40rpx;
+}
+.leave_message textarea{
+    width: 634rpx;
+    min-height: 76rpx;
+    border: 1rpx solid #BFBFBF;
+    border-radius: 10rpx;
+    line-height: 76rpx;
+    margin: 40rpx auto 25rpx;
+}
+.submit{
+    width: 210rpx;
+    height: 70rpx;
+    background: #F44C70;
+    border-radius: 35rpx;
+    color: white;
+    font-size: 32rpx;
+    line-height: 70rpx;
+    margin: 0 auto 24rpx;
+    text-align: center;
+}
+.refund,.language_topic{
+    color: #999999;
+}
+.refund{
+    text-decoration: underline;
+}

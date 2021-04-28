@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container app">
+  <view class="course">
+    <component_date course_date="some text" bind:courseTime="selectTime"></component_date>
+  </view>
+  <view class="language">
+    <component_language language="全部" bind:courseLanguage="selectLanguage"></component_language>
+  </view>
+  <view class="lesson_list">
+    <view class="lesson" wx:for="{{teachers}}" wx:key="index" >
+      <view class="avatar">
+        <image src="{{item.avatar}}" mode="aspectFit" lazy-load="true" alt="teacherAvatar"></image>
+      </view>
+      <view  class="content">
+        <view class="title">{{item.nickname}}</view>
+        <view class="teacher_profile">{{item.teacher_info}}</view>
+      </view>
+      <view class="lesson_profile">
+        <view class="name">{{item.lan}}</view>
+        <view class="appointment" data-url="/pages/details/details?teacher_id={{item.teacher_id}}&lan={{item.lan}}" catchtap="Lesson_Details">约课</view>
+      </view>
+    </view>
+  </view>
+</view>

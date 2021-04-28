@@ -1,0 +1,25 @@
+<!-- service 客服 组件 -->
+<view class="wrap">
+    <view class="content_back">
+        <image class="img_mask" src="/iamges/icon_cancel.png"></image>
+        <image class="close_icon" catchtap="cancel" src="/iamges/close_icon.png"></image>
+        <view class="content_select">
+            <view class="title_icon">
+                <image mode="aspectFit" src="/iamges/service_icon.png"></image>
+            </view>
+            <view class="wechat_service">
+                <view class="service">微信客服: </view>
+                <text>WX23456789</text>
+                <image data-text="WX23456789" catchtap="copyText" src="/iamges/icon_copy.png"></image>
+            </view>
+            <view class="line_mask"></view>
+            <view class="wechat_phone">
+                <view class="phone">微信电话: </view>
+                <text>18889898989</text>
+                <image data-text="18889898989" catchtap="copyText" src="/iamges/icon_copy.png"></image>
+            </view>
+            <view class="confirm_only" catchtap="confirm">确认</view>
+        </view>
+    </view>
+</view>
+<slot></slot>

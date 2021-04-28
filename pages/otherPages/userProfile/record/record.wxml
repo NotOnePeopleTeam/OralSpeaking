@@ -1,0 +1,20 @@
+<!--pages/otherPages/userProfile/record/record.wxml-->
+<view  class="container_record">
+    <view  class="record_evaluate">
+        <view class="lesson_date">
+            <view class="record_date">2020.11.23 | 17:00~17:50</view>
+            <view catchtap="Refund" class="refund" data-url="refund/refund">申请退款</view>
+        </view>
+        <view class="lesson_language">
+            <text class="language_name" decode="true">英语&nbsp;|&nbsp;英语名称</text>
+            <text decode="true" class="language_topic">话题名称话题名称话题名称</text>
+        </view>
+        <view class="lesson_evaluate">
+            <image catchtap="clickStar" wx:for="{{5}}" wx:key="index" data-count="{{item}}" class="star" src="{{ count >= item ? star :  star_none}}"></image>
+        </view>
+        <view class="leave_message">
+            <textarea name="leaveMessage" id="leaveMessage" cols="30" rows="10" auto-height="{{true}}" placeholder="留言评价..."></textarea>
+        </view>
+        <view class="submit">提交</view>
+    </view>
+</view>

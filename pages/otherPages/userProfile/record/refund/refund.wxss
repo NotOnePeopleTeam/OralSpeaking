@@ -1,0 +1,101 @@
+/* pages/otherPages/userProfile/refund/refund.wxss */
+.refund_wrap{
+    background: white;
+    padding-bottom: 133rpx;
+}
+.refund_title{
+    font-size: 30rpx;
+    font-weight: 400;
+    padding: 30rpx;
+}
+.refund_reason{
+    padding-bottom: 48rpx;
+    border-bottom: 2rpx solid #e6e6e6;
+}
+.refund_reason textarea{
+    height: 300rpx;
+    width: 700rpx;
+    margin: 0 auto;
+}
+.add_img{
+    width: 210rpx;
+    height: 180rpx;
+}
+.refund_img{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 30rpx;
+    padding-top: 30rpx;
+
+}
+.img_upload{
+    margin-right: 30rpx;
+    margin-bottom: 30rpx;
+    position: relative;
+}
+.close_concel{
+    width: 38rpx;
+    height: 38rpx;
+    position: absolute;
+    top: -16rpx;
+    right: -16rpx;
+}
+.click_img{
+    margin-right: 30rpx;
+    margin-bottom: 30rpx;
+}
+.next_btn_wrap{
+    width: 750rpx;
+    height: 133rpx;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.next_btn{
+    width: 605rpx;
+    height: 88rpx;
+    background: #F44C70;
+    border-radius: 44rpx;
+    font-size: 32rpx;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 88rpx;
+    margin: 0 auto;
+}
+/* 审核样式 */
+.refund_examine{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.examine_bg{
+    width: 100%;
+    height: 560rpx;
+}
+.result{
+    height: 136rpx;
+    width: 136rpx;
+    margin-top: -420rpx;
+}
+.result_text{
+    margin: 56rpx auto;
+    text-align: center;
+    font-size: 36rpx;
+    color: white;
+}
+.submit_status{
+    text-align: center;
+}
+.status_font{
+    color: #212121;
+    font-size: 32rpx;
+    font-weight: bold;
+    margin-bottom: 40rpx;
+}
+.tip_font{
+    font-size: 28rpx;
+    color: #666666;
+}

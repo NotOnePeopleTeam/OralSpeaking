@@ -1,0 +1,39 @@
+<!--pages/timetable.wxml-->
+<view class="container app">
+    <view class="title">我的课表</view>
+    <view class="course">
+        <component_date course_date="some text"></component_date>
+    </view>
+    <view class="lesson_list">
+        <view class="lesson_item">
+            <view class="lesson_time item_flex">
+                <view class="up">
+                    <text decode="true">14:00~14:55&nbsp;|&nbsp;StudentName</text><image mode="aspectFill" class="student" src="/iamges/student.png"></image>
+                </view>
+                <view  class="up"><text class="cancel selected" catchtap="appointment">取消预约</text></view>
+            </view>
+            <view class="lesson_content item_flex">
+                <view class="down down_wrap">
+                    <text class="topic" decode="true">英语&nbsp;&nbsp;lessontopic!lessontopic!lessontopic</text>
+                </view>
+                <view class="down">开课前12h以上可以取消预约</view>
+            </view>
+        </view>
+        <view class="lesson_item">
+            <view class="lesson_time item_flex">
+                <view class="up">
+                    <text decode="true">14:00~14:55&nbsp;|&nbsp;学生名称</text><image mode="aspectFill" class="student" src="/iamges/student.png"></image>
+                </view>
+                <view  class="up"><text class="cancel selected" catchtap="appointment">取消预约</text></view>
+            </view>
+            <view class="lesson_content item_flex">
+                <view class="down down_wrap">
+                    <text class="topic" decode="true">英语&nbsp;&nbsp;lessontopic!lessontopic!lessontopic</text>
+                </view>
+                <view class="down">开课前12h以上可以取消预约</view>
+            </view>
+        </view>
+    </view>
+</view>
+<!-- 约课组件 -->
+<component_appointment wx:if="{{booleanMask}}" appiontmentData="{{appointmentData}}" bind:booleanPoint="selectCourse"></component_appointment>

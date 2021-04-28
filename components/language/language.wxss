@@ -1,0 +1,45 @@
+/* components/language/language.wxss */
+.title,.item{
+    background-color: white;
+    border: solid 1px grey;
+    border-radius: 26px;
+    height: 52rpx;
+    line-height: 52rpx;
+    text-align: center;
+    padding: 0 20rpx;
+    font-size: 28rpx;
+    margin: 21rpx 0;
+    color: #666666;
+    font-family: inherit;
+}
+
+.title{
+    width: 40px;
+    margin-left: 10px;
+}
+
+.language{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 94rpx;
+}
+
+.context{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 94rpx;
+}
+
+.item-wrap{
+    margin-left: 10px;
+}
+
+.on{
+    background-color: #fab6c7;
+    color: #ff104c;
+    border-color: rgb(248, 156, 202);
+}

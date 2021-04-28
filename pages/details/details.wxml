@@ -1,0 +1,49 @@
+<!--pages/details/details.wxml-->
+<view class="container_details">
+    <view class="header">
+        <view class="teacher_profile">
+            <view class="teacher_avatar">
+                <image mode="aspectFit" src="{{avatar}}"></image>
+            </view>
+            <view class="teacher_details">
+                <view class="teacher_name">
+                    <text class="name">{{nickname}}</text>
+                    <text class="subject">{{lan}}</text>
+                </view>
+                <view class="teacher {{ up ? 'more' : ''}}" animation='{{slideUp}}'>
+                    <text>{{teacher_info}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="profile_more" data-up="{{up}}" catchtap="profileMore">
+            展示<image class="up_down" src="/iamges/{{ up ? 'up' : 'down'}}.png"></image>
+        </view>
+    </view>
+    <view class="lesson_tab">
+        <view class="tab_controller">
+            <view class="tab_date {{ tab == 'date' ? 'now' : ''}}" data-tab="date" catchtap="tabSelect">可选时间</view>
+            <view class="tab_topic {{ tab == 'topic' ? 'now' : ''}}" data-tab="topic" catchtap="tabSelect">可选话题</view>
+        </view>
+        <view class="tab_content">
+            <view class="tab_date_content" wx:if="{{ tab == 'date'}}">
+                <view class="date_content">
+                    <component_date course_date="some text" bind:courseTime="selectTime"></component_date>
+                </view>
+                <view class="date_list" wx:if="{{ tab == 'topic'}}">
+                    <view class="list_item">
+                        <view class="time_range">
+                            <text class="time_start" decode="true">10:&nbsp;00</text>
+                            <text class="time_end" decode="true">10:&nbsp;00&nbsp;结束</text>
+                        </view>
+                        <view class="appointment">约课</view>
+                    </view>
+                </view>
+            </view>
+            <view class="tab_topic_content">
+                <view class="topic_list">
+                    <view class="list_item">选择话题选择话题选择话题选择话题选择话题选择</view> 
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

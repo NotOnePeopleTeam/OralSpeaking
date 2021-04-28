@@ -1,0 +1,12 @@
+<!--pages/otherPages/userProfile/question/question.wxml-->
+<view class="about_question">
+    <view  class="about_student" data-type="student" catchtap="clickRole">
+        <view class="{{ type == 'student' ? 'now' : ''}}">关于学生</view>
+    </view>
+    <view class="about_teacher" data-type="teacher" catchtap="clickRole">
+        <view class="{{type == 'teacher' ? 'now' :''}}">关于老师</view>
+    </view>
+</view>
+<view class="question_content">
+    <text>new some questions...about student!</text>
+</view>

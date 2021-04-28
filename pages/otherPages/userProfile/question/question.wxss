@@ -1,0 +1,26 @@
+/* pages/otherPages/userProfile/question/question.wxss */
+.about_question{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100rpx;
+    margin-bottom: 20rpx;
+    font-size: 32rpx;
+}
+.about_student,.about_teacher{
+    line-height: 100rpx;
+    width: 50%;
+}
+.about_student view,.about_teacher view{
+    width: 140rpx;
+    padding: 0 20rpx;
+    margin: 0 auto;
+    text-align: center;
+    color: #888888;
+    border-bottom: 6rpx solid transparent;
+}
+.about_student .now,.about_teacher .now{
+    color: #F45F7F;
+    border-bottom: 6rpx solid #F45F7F;
+}

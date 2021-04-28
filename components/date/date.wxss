@@ -1,0 +1,30 @@
+/* components/date.wxss */
+.date_wrap {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+}
+.title {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    width: 750rpx;
+}
+.week{
+    font-size: 30rpx;
+    padding-top: 43rpx;
+}
+.day{
+    line-height: 60rpx;
+}
+view.now{
+    color: #ff3366;
+    border-bottom: 4rpx  solid #ff3366;
+}
+.date_item{
+    height: 154rpx;
+    padding: 0 10px;
+    border-bottom: 4rpx  solid transparent;
+}

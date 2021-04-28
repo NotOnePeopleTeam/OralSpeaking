@@ -1,0 +1,10 @@
+<!--the language of components-->
+<view class="language">
+    <view class="title {{selected_id == 0 ? 'on': ''}}" data-id="0" bind:tap="select">{{language}}</view>
+    <scroll-view enable-flex="true" class="context" scroll-x='true' scroll-with-animation='true'>
+        <view class="item-wrap" data-id="{{item.id}}" bind:tap="select" wx:for="{{language_all}}" wx:key="index">
+            <view class="item {{item.id == selected_id ? 'on': ''}}">{{item.language_ch}}</view>
+        </view>
+    </scroll-view>
+</view>
+<slot></slot>

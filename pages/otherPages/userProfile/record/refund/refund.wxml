@@ -1,0 +1,32 @@
+<!--pages/otherPages/userProfile/refund/refund.wxml-->
+<view class="refund_wrap" wx:if="{{!examine}}">
+    <view class="refund_title">请输入退款理由：</view>
+    <view  class="refund_reason">
+        <textarea name="RefunReason" id="RefunReason" bindinput="areaText" cols="30" rows="10" value="" placeholder="输入..." maxlength="300"></textarea>
+    </view>
+    <view class="refund_img">
+        <view class="click_img add_img">
+            <image catchtap="click_upload" mode="aspectFill" src="/iamges/upload.png"></image>
+        </view>
+        <view class="img_upload add_img" wx:for="{{upImglist}}" wx:key="index">
+            <image class="close_concel" data-index="{{index}}" catchtap="close_concel" src="/iamges/close_icon_load.png"></image>
+            <image mode="aspectFill" src="{{item}}"></image>
+        </view>
+    </view>
+</view>
+<view class="refund_examine" wx:if="{{examine}}">
+    <image class="examine_bg" mode="bottom" src="/iamges/icon_examine_bg.png"></image>
+    <view class="examine_result">
+        <view class="result">
+            <image class="result_icon" src="/iamges/icon_examine.png"></image>
+        </view>
+        <view class="result_text"><text>审核中</text></view>
+    </view>
+    <view class="submit_status">
+        <view class="status_font">提交成功，等待审核！</view>
+        <view class="tip_font">提示文字提示文字提示文字提示文字</view>
+    </view>
+</view>
+<view class="next_btn_wrap" wx:if="{{!examine}}">
+    <view class="next_btn" catchtap="submitCon">Next</view>
+</view>
